@@ -51,11 +51,11 @@ class PokemonView extends StatelessWidget {
                             imageUrl: pokemon.imageUrl,
                             width: 50,
                             height: 50,
-                          ),
+                          ).paddingAll(10),
                           // ignore: prefer_const_constructors
-                          SizedBox(
+                          /*SizedBox(
                               width:
-                                  10), // Añade espacio entre la imagen y el nombre
+                                  10),*/ // Añade espacio entre la imagen y el nombre
                           Text(pokemon.name),
                         ],
                       ),
