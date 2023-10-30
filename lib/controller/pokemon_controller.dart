@@ -17,7 +17,7 @@ class PokemonController extends GetxController {
 
   void fetchPokemonList() async {
     final response = await http
-        .get(Uri.parse('https://pokeapi.co/api/v2/pokemon?limit=1000'));
+        .get(Uri.parse('https://pokeapi.co/api/v2/pokemon?limit=1008'));
     if (response.statusCode == 200) {
       var data = json.decode(response.body);
       var pokemonData = data['results'] as List;
